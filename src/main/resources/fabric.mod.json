@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "semihardcore",
+  "version": "${version}",
+  "name": "Semi Hardcore",
+  "description": "Temporary perma-death for the Fabric server!",
+  "authors": [
+    "Marteinn"
+  ],
+  "contact": {
+    "website": "https://handshot.xyz"
+  },
+  "license": "MIT",
+  "icon": "assets/semihardcore/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "xyz.handshot.shc.SemiHardcore"
+    ]
+  },
+  "mixins": [
+    "semihardcore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
