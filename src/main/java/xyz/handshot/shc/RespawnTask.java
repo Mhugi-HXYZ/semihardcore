@@ -13,6 +13,7 @@ public class RespawnTask implements Runnable {
 
     @Override
     public void run() {
+        SemiHardcore.LOGGER.info("Respawning all dead players");
         server.getPlayerManager().getPlayerList().forEach(this::respawnIfDead);
     }
 
