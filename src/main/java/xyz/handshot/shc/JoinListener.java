@@ -13,10 +13,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.TemporalAdjusters;
 
 public class JoinListener implements ServerPlayConnectionEvents.Join {
-
-    private final LocalDateTime time = LocalDateTime.now().plusMinutes(5);
     private final MinecraftDedicatedServer server;
-
 
     public JoinListener(MinecraftDedicatedServer server) {
         this.server = server;
